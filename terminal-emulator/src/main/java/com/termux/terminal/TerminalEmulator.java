@@ -2479,11 +2479,11 @@ public final class TerminalEmulator {
                 mBackColor = TextStyle.COLOR_INDEX_BACKGROUND;
                 mEffect = 0;
             } else if (code == 1) {
-                mEffect |= TextStyle.CHARACTER_ATTRIBUTE_BOLD;
+                // Bold disabled.
             } else if (code == 2) {
                 mEffect |= TextStyle.CHARACTER_ATTRIBUTE_DIM;
             } else if (code == 3) {
-                mEffect |= TextStyle.CHARACTER_ATTRIBUTE_ITALIC;
+                // Italic disabled.
             } else if (code == 4) {
                 if (i + 1 <= mArgIndex && ((mArgsSubParamsBitSet & (1 << (i + 1))) != 0)) {
                     // Sub parameter, see https://sw.kovidgoyal.net/kitty/underlines/
